@@ -2,15 +2,20 @@
 
 # Installation steps needed to install grunt and successfully compile translations:
 
-npm install "grunt"
-npm install "grunt-contrib-uglify"
-npm install "grunt-contrib-concat"
-npm install "grunt-contrib-watch"
-npm install "grunt-css"
-npm install "grunt-markdown"
-npm install "grunt-macreload"
-npm install "grunt-angular-gettext"
-npm install "bower"
+#npm install "grunt"
+#npm install "grunt-contrib-uglify"
+#npm install "grunt-contrib-concat"
+#npm install "grunt-contrib-watch"
+#npm install "grunt-css"
+#npm install "grunt-markdown"
+#npm install "grunt-macreload"
+#npm install "grunt-angular-gettext"
+#npm install "bower"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+nvm use v4
+npm install
 ./node_modules/.bin/bower install
 
 # extract: ./node_modules/.bin/grunt nggettext_extract 
