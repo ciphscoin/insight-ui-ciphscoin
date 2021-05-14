@@ -41,7 +41,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
     $scope.setCurrency = function(currency) {
       $rootScope.currency.symbol = currency;
-      localStorage.setItem('insight-currency', currency);
+      localStorage.setItem('CIPHS', currency);
 
       if (currency === 'USD') {
         Currency.get({}, function(res) {
