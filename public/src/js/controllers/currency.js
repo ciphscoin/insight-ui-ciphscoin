@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('insight.currency').controller('CurrencyController',
+angular.module('CIPHS').controller('CurrencyController',
   function($scope, $rootScope, Currency) {
-    $rootScope.currency.symbol = defaultCurrency;
+    $rootScope.currency.symbol = "defaultCurrency";
 
     var _roundFloat = function(x, n) {
       if(!parseInt(n, 10) || !parseFloat(x)) n = 0;
